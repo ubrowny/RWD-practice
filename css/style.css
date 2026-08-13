@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../css/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    padding: 20px 40px;
+    border: 1px solid #FCFDFE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brown{
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #FCFDFE;
+    cursor: pointer; 
+}
+
+.dev{
+    font-style: italic;
+    color: #D00256;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.nav-links{
+    /* width: 50%; */
+    /* height: 100%; */
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav li {
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+a {
+    color: #FCFDFE;
+    text-decoration: none;
+}
+
+.container {
+    
+    /* background-color: #18192d; */
+    width: 100%;
+    height: 37rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myname{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* line-height: 1.5rem; */
+}
+
+.name {
+    /* letter-spacing: 0.5rem; */
+    font-family: "Franklin Gothic Medium", sans-serif;
+    font-size: 49px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #FCFDFE;
+    letter-spacing: 0.5rem;
+}
+
+.title {
+    font-style: italic;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FCFDFE;
+}
+
+.btn{
+    width: 10rem;
+    height: 3rem;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    /* border-radius: 17px; */
+}
+
+.btn p{
+    font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #FCFDFE;
+    font-size: 20px;
+}
+
+/* responsive web design practice */
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        gap: 0.5rem;
+        /* background-color: red; */
+    }
+
+    nav li {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #FCFDFE;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+}
