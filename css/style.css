@@ -6,14 +6,21 @@
 }
 
 body {
-    background-image: url(../css/background.png);
-    background-size: cover;
-    background-position: center;
+    
+    font-family: "Inter", sans-serif;
+}
+
+.greeting {
+  font-size: 16px;
+
 }
 
 .navbar {
+    background-image: url(../css/background.png);
+    background-size: cover;
+    background-position: center;
     padding: 20px 40px;
-    border: 1px solid #FCFDFE;
+    /* border: 1px solid #FCFDFE; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,7 +35,7 @@ body {
 .brown{
     font-size: 38px;
     font-weight: 700;
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
     color: #FCFDFE;
     cursor: pointer; 
 }
@@ -41,9 +48,6 @@ body {
 }
 
 .nav-links{
-    /* width: 50%; */
-    /* height: 100%; */
-    /* background-color: green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,36 +55,43 @@ body {
     list-style: none;
 }
 
-nav li {
+.nav-links a {
     font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-}
-
-a {
     color: #FCFDFE;
     text-decoration: none;
 }
 
-.container {
-    
-    /* background-color: #18192d; */
-    width: 100%;
-    height: 37rem;
+h2{
+    font-family: "Franklin Gothic Medium", sans-serif;
+}
+
+/* Home Section styling */
+
+.homesection {
+    /* background-color: #020014; */
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
+    padding-top: 20px;
+}
+
+.container {   
+    border: 1px solid #FCFDFE;
+    margin:  auto;
+    padding: 70px 0;
+    width: 80%;
 }
 
 .myname{
-    height: 10rem;
+    /* height: 10rem; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
-    /* line-height: 1.5rem; */
 }
 
 .name {
@@ -89,7 +100,7 @@ a {
     font-size: 49px;
     font-weight: 300;
     line-height: 24px;
-    color: #FCFDFE;
+    /* color: #FCFDFE; */
     letter-spacing: 0.5rem;
 }
 
@@ -99,13 +110,18 @@ a {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    color: #FCFDFE;
+    /* color: #FCFDFE; */
 }
 
+.btns{
+    display: flex;
+    gap: 2rem;
+
+}
 .btn{
     width: 10rem;
     height: 3rem;
-    border: 2px solid white;
+    border: 2px solid black;
     background-color: transparent;
     font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 20px;
@@ -116,25 +132,87 @@ a {
 
 .btn p{
     font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #FCFDFE;
+    /* color: #FCFDFE; */
     font-size: 20px;
 }
 
-/* responsive web design practice */
-
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: flex;
-        gap: 0.5rem;
-        /* background-color: red; */
-    }
-
-    nav li {
-    font-family: "Segoe UI", Arial, sans-serif;
-    color: #FCFDFE;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
+.social-links{
+    display: flex;
+    gap: 1rem;
 }
 
+.social-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.aboutsection {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    height: 90vh;
+    padding-top: 20px;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.skill-set{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* background-color: green; */
+}
+
+.skills{
+    display: flex;
+    gap: 1rem;
+    /* background-color: yellow; */
+}
+
+.skills1{
+    display: flex;
+    /* background-color: pink; */
+    gap: 1rem;
+    width: 100%;
+}
+
+.icon-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 20px;
+    gap: 5px;
+}
+
+.experience{
+    display: flex;
+    gap: 1rem;
+}
+
+.portfolio-section{
+    background-color: grey;
+    display: flex;
+    height: 90vh;
+    padding-top: 20px;
+
+}
+
+.my-projects{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.projects{
+    display: flex;
+    gap: 2rem;
+}
+
